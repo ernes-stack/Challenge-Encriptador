@@ -173,6 +173,22 @@ header img{
     color: #495057;
 }
 
+.resultado{
+    position: absolute;
+    box-sizing: border-box;
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 10%;
+}
+
+.resultado p{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0a3871;
+}
+
 .copiar{
     display: flex;
     flex-direction: column;
@@ -185,7 +201,6 @@ header img{
 }
 
 .btn-copiar{
-    visibility: hidden;
     justify-content: center;
     padding: 2%;
     gap: 8px;
@@ -200,6 +215,10 @@ header img{
     text-align: center;
     color: #000;
     cursor: pointer;
+}
+
+.ocultar{
+    display: none;
 }
 
 /*responsive desing*/

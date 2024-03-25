@@ -21,26 +21,25 @@
                 <p>Solo letras minúsculas y sin acentos.</p>
             </div>
             <div class="contenedor-botones">
-                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
-                <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                <button class="btn-encriptar" type="button">Encriptar</button>
+                <button class="btn-desencriptar" type="button">Desencriptar</button>
             </div>
         
             <div class="encriptado">
-                <img src="img/Muñeco.png" alt="muñeco" id="munieco">
+                <img src="img/Muñeco.png" alt="muñeco" class="munieco">
                 <div class="mensaje-encriptado" id="mensaje-encriptado">
                     <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
-                    <p id="parrafo-mensaje">Ingresa el texto que deseas encriptar o desencriptar</p>
-                    <!-- <textarea name="mensaje" id="mensaje cols="30" rows="10" class="mensaje"></textarea> -->   
+                    <p id="parrafo-mensaje">Ingresa el texto que deseas encriptar o desencriptar</p> 
+                </div>
+                <div class="resultado">
+                    <p class="texto-resultado"></p>
                 </div>
                 <div class="copiar">
-                    <button class="btn-copiar" type="button" onclick="copiarResultado()">Copiar</button>
+                    <button class="btn-copiar" type="button">Copiar</button>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-
-    </footer>
     <script src="main.js"></script>
 </body>
 </html>
