@@ -4,6 +4,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+main{
+    background-color: #f3f5fc;
+}
+
 header{
     position: relative;
     width: 100%;
@@ -123,6 +127,7 @@ header img{
 }
 
 .encriptado{
+    display: table;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -176,6 +181,8 @@ header img{
 .resultado{
     position: absolute;
     box-sizing: border-box;
+    padding: 1%;
+    gap: 8px;
     width: 80%;
     height: 60%;
     left: 10%;
@@ -183,6 +190,9 @@ header img{
 }
 
 .resultado p{
+    word-wrap: break-word;
+    height: 110%;
+    width: 100%;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
@@ -263,7 +273,7 @@ header img{
 
     .encriptado{
         width: 80%;
-        height: 15%;
+        height: 30%;
         left: 10%;
         top: 80%;
     }
@@ -286,6 +296,8 @@ header img{
     }
 
     .btn-copiar{
+        margin-top: 5%;
         width: 80%;
+        height: 60%;
     }
 }
