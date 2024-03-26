@@ -1,5 +1,6 @@
 var botonEncriptar = document.querySelector(".btn-encriptar");
 var botonDesencriptar = document.querySelector(".btn-desencriptar");
+var botonCopiar = document.querySelector(".btn-copiar");
 var munieco = document.querySelector(".munieco");
 var contenedor = document.querySelector(".mensaje-encriptado");
 var resultado = document.querySelector(".texto-resultado");
@@ -11,12 +12,14 @@ function encriptar(){
     ocultarAdelante();
     var cajatexto = recuperarTexto();
     resultado.textContent = encriptarTexto(cajatexto);
+    botonCopiar.classList.add("mostrar");
 }
 
 function desencriptar(){
     ocultarAdelante();
     var cajatexto = recuperarTexto();
     resultado.textContent = desencriptarTexto(cajatexto);
+    botonCopiar.classList.add("mostrar");
 }
 
 function recuperarTexto(){
@@ -33,6 +36,10 @@ function encriptarTexto(mensaje){
     
     var texto = mensaje;
     var textoFinal = "";
+
+    if (texto == 0){
+        alert("Debe ingresar texto para continuar")
+    }
 
     for (var i = 0; i < texto.length; i++){
         if(texto[i] == "a"){

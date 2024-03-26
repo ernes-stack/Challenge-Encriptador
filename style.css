@@ -211,7 +211,9 @@ header img{
 }
 
 .btn-copiar{
+    display: none;
     justify-content: center;
+    align-items: center;
     padding: 2%;
     gap: 8px;
     width: 100%;
@@ -225,6 +227,10 @@ header img{
     text-align: center;
     color: #000;
     cursor: pointer;
+}
+
+.mostrar{
+    display: flex;
 }
 
 .ocultar{
