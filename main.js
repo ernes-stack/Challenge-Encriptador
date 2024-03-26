@@ -30,6 +30,7 @@ function ocultarAdelante(){
 }
 
 function encriptarTexto(mensaje){
+    
     var texto = mensaje;
     var textoFinal = "";
 
